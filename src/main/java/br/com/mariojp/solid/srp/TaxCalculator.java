@@ -6,4 +6,9 @@ public class TaxCalculator {
 		return subtotal * tax;
 
 	    }
+
+	public static double calculator(double subtotal) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	}

@@ -4,7 +4,7 @@ public class ReceiptService {
 	public String generate(Order order) {
 		double subtotal = order.getItems().stream().mapToDouble(i -> i.getUnitPrice() * i.getQuantity()).sum();
     
-		double tax = TaxCalculator.calculator(subtotal);
+		double tax = TaxCalculator.calculate(subtotal);
 
 		double total = subtotal + tax;
 		
